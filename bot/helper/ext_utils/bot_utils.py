@@ -172,7 +172,6 @@ def get_readable_message():
                         msg += f'\n<b>├ Source: </b><a href="https://t.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a>'
                     except:
                         pass
-                else:
                 msg += f"\n<b>└ Stop: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
             elif download.status() == MirrorStatus.STATUS_SEEDING:
                 msg += f"\n<b>├ Size: </b>{download.size()}"
